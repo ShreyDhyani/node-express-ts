@@ -83,7 +83,7 @@ Open nodemon.json and add following code to it.
 ```
 
 Now at last we will add following scripts to our package.json files for dev mode, build and start our backend server.
-``` json
+``` javascript
 "scripts": {
 	"start": "node ./dist/server.js", //Start our transpiled file
 	"build": "tsc -p .", //Transpile ts file and generate js code for consumption
