@@ -8,7 +8,7 @@ app.get('/', (req: Request, res:Response):void => {
 })
 
 app.get('/test', (req: Request, res: Response): void=>{
-  res.send(req.body)
+  res.send(req.header)
 })
 
 app.listen(port, ():void => {

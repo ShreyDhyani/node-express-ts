@@ -9,6 +9,9 @@ const port = 3000;
 app.get('/', (req, res) => {
     res.send({ msg: "Hello This is a sample mesage to be checking 2 " });
 });
+app.get('/test', (req, res) => {
+    res.send(req.header);
+});
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
