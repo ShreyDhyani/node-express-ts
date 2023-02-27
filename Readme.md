@@ -87,7 +87,7 @@ Now at last we will add following scripts to our package.json files for dev mode
 "scripts": {
 	"start": "node ./dist/server.js", //Start our transpiled file
 	"build": "tsc -p .", //Transpile ts file and generate js code for consumption
-	"dev": "nodemon" //We only need to give this command as the configuration values will be taken from nodemon.json file
+	"dev": "nodemon ./src/server.ts" //We only need to give this command as the configuration values will be taken from nodemon.json file
 },
 ```
 
@@ -95,12 +95,12 @@ Development mode Script
 ```javascript
 ➜  yarn dev
 yarn run v1.22.19
-$ nodemon
+$ nodemon ./src/server.ts
 [nodemon] 2.0.20
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching path(s): src/**/*.ts
 [nodemon] watching extensions: ts,json
-[nodemon] starting `node ./dist/server.js`
+[nodemon] starting `ts-node ./src/server.ts`
 Example app listening on port 3000
 ```
 Build and create `server.js` file for
